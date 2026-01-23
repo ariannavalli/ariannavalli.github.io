@@ -7,9 +7,9 @@
     "ROND" 0;
 }
 body {
-margin: 0 2vw;
-background-color: rgb(206, 206, 252);
-font-size: 1rem;
+    margin: 0 2vw;
+    background-color: rgb(213, 213, 250);
+    font-size: 1rem;
 }
 h1{
     font-size: 2.5rem;
@@ -20,7 +20,7 @@ h1{
 h2 {
     font-size: 1.75rem;
     font-family: 'Doto';
-    color: green;
+    color: mediumvioletred;
     /*color: rgb(33, 197, 33);*/
     text-align: center;
 }
@@ -52,6 +52,11 @@ a:link {
     color: rgb(88, 10, 160);
     text-decoration: underline; 
 }
+a:hover {
+    background-color: rgb(255, 198, 244);
+    text-decoration: underline;
+}
+
 img.fullwidth {
     max-width: 100%;
     height: auto;
