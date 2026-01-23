@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-GB">
+    <style> 
+        body {
+            margin: 0 2vw;
+            background-color: lavender;
+            font-family: monospace;
+            color: darkgreen;
+        }
+        img {
+            max-width: 100%;
+            max-height: 70vh;
+            height: auto;
+            display: flex;
+            margin: 20px auto;
+         }
+        hr {
+           border: 0;
+           border-top: 1px solid blueviolet;
+           margin: 20px 0;
+         }
+        a:link {
+          color: darkslateblue;
+         text-decoration: underline;  
+            }
+    </style>
+<head><title>Arianna Valli | Daily quote</title></head>
+<body>
+<h4><a href="../index.html">Home page</a> <br>
+<a href="../home.html">Back</a></h4>
+<h1>Daily quote</h1>
+<p>I know that your favourite chatbot can do it too, but these daily quotes are chosen from a list curated by me,
+    guaranteed against AI hallucinations!
+</p>
+<hr>
+<button onclick="chooseQuote()">Discover today's quote!</button>
+
+  <p id="result"></p>
+
+  <script>
+    // Lista di citazioni
+    const quotes = ['“You can be anything you want to be, just turn yourself into anything you think that you could ever be.<br>Be free with your tempo, be free, surrender your ego, be free to yourself.<br>And whatever will be, will be. Just keep on trying, till the end of time”<br>- Queen, <i>Innuendo</i>',
+    '“Sometimes, it is the people who no one imagines anything of, who do the things that no one can imagine.”<br>- The Imitation Game',
+    '“Se gli ostacoli e le difficoltà scoraggiano un uomo mediocre, al contrario al genio sono fondamentali.”<br>- Gericault',
+    '“See life as a means to a triumph.<br>See how you will heal and you’ll rise above.<br>It’s more courageous to overcome.”<br>- Gang of Youths, <i>Achilles come down</i>',
+    '“We must constantly look at things in a different way. Just when you think you know something, you have to look at it in another way.”<br>- John Keating',
+    '“Some people can\'t believe in themselves, until someone else believes in them first.”<br>- Good Will Hunting',
+    '“I was an ordinary person, who studied hard.”<br>- Richard Feynman'];
+
+    function chooseQuote() {
+      // Sceglie un indice casuale
+      const index = Math.floor(Math.random() * quotes.length);
+      // Prende la citazione corrispondente
+      const RandomQuote = quotes[index];
+      // Mostra il risultato nella pagina
+      document.getElementById('result').innerHTML =  RandomQuote; // innerHTML consente di interpretare <br> come comando e non parte del testo
+    }
+  </script>
+
+<hr>
+<h4><a href="../home.html">Back</a> <br>
+<a href="../index.html">Home page</a></h4>
+</body>
+</html>
+
+
