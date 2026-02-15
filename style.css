@@ -21,7 +21,7 @@ body {
     );*/
     font-size: 1rem;
 }
-header{
+header.dark{
     /*background-color: rgb(88, 10, 160);*/
     margin-left: 0;
     margin-right: 0;
@@ -33,6 +33,20 @@ header{
         rgb(213, 213, 250) 5%,
         rgb(88, 10, 160) 30%,
         rgb(88, 10, 160) 65%
+    );
+}
+header.light{
+    /*background-color: rgb(88, 10, 160);*/
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0px;
+    padding-bottom: 2%;
+    background-image: linear-gradient(
+        to top,
+        rgb(88, 10, 160) 5%,
+        rgb(213, 213, 250) 30%,
+        rgb(213, 213, 250) 65%
     );
 }
 h1{
@@ -119,6 +133,32 @@ h4.bottom {
     width: 100%;
     bottom: 0;
 }
+h4.bottom-light {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(88, 10, 160) 0%,
+        rgb(88, 10, 160) 2%,
+        rgb(213, 213, 250) 30%,
+        rgb(213, 213, 250) 50%,
+        rgb(213, 213, 250) 70%,
+        rgb(213, 213, 250) 98%,
+        rgb(213, 213, 250) 100%
+    );
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1rem;
+    font-family: 'Doto';
+    color: rgb(88, 10, 160);
+    /* color: rgb(14, 196, 14);
+    color: rgb(30, 173, 30);
+    /*color: rgb(33, 197, 33);*/
+    text-align: center;
+    position:flex;
+    width: 100%;
+    bottom: 0;
+}
 p{
     font-family: monospace;
     color: rgb(88, 10, 160);
@@ -136,26 +176,28 @@ hr {
     border-style:solid;
     }
 hr.faded-light {
-    border: none;               /* Rimuove la linea di default */
-    height: 0.5px;                /* Spessore della linea */
+    border: none;             
+    height: 0.5px;  
+    padding-bottom: 0.1%;              
     background: linear-gradient(
       to right,
       transparent,
-      rgb(213, 213, 250),   /* colore centrale – puoi cambiarlo */
+      rgb(213, 213, 250),   
       transparent
     );
     margin: 0 0;       
 }      
 hr.faded-dark {
-    border: none;               
-    height: 0.5px;                /* Spessore della linea */
+    border: none;   
+    padding-bottom: 1px;            
+    height: 0.5px;                
     background: linear-gradient(
       to right,
       transparent,
-      rgb(88,10,160),   /* colore centrale – puoi cambiarlo */
+      rgb(88, 10, 160),   
       transparent
     );
-    margin: 0 0;             /* Spazio sopra e sotto, opzionale */
+    margin: 0 0;             
   }
 a:link {
     /* color: darkslateblue; */
@@ -166,7 +208,26 @@ a:hover {
     /*background-color: rgb(255, 198, 244);*/
     text-shadow: 0px 0px 20px;
 }
-
+button.dark{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 8%;
+    height: 5%;
+    font-family: 'Doto';
+    color: rgb(213, 213, 250);
+    background-color: rgb(88, 10, 160);
+}
+button.light{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 8%;
+    height: 5%;
+    font-family: 'Doto';
+    color: mediumvioletred;
+    background-color: rgb(213, 213, 250);
+}
 img.fullwidth {
     max-width: 100%;
     height: auto;
