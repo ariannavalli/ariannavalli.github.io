@@ -68,7 +68,7 @@ h2 {
     text-align: center;
     margin-top: 0;
     padding-top: 2%;
-    text-shadow: 0px 0px 20px;
+    text-shadow: 0px 0px 30px; padding-top: 3%;
 }
 h4 {
     background-color: rgb(88, 10, 160);
